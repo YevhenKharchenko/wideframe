@@ -1,4 +1,6 @@
 .gallery-section {
+  background: #fcf4e7;
+
   @include media(desktop) {
   }
 }
@@ -10,16 +12,11 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  background-image: url(../img/gallery/gallery-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
     padding-top: 104px;
     padding-bottom: 104px;
     max-width: 1440px;
-    background-image: url(../img/gallery/gallery-bg-desk.jpg);
   }
 }
 
@@ -34,10 +31,23 @@
 }
 
 .gallery-title {
-  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.gallery-subtitle {
+  text-align: center;
+  color: #343434;
   margin-bottom: 40px;
 
   @include media(desktop) {
+    max-width: 714px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 64px;
   }
 }
@@ -58,10 +68,6 @@
 
 .gallery-swiper-wrapper {
   @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
   }
 }
 
@@ -71,15 +77,13 @@
 
   @include media(desktop) {
     max-width: 304px;
-    width: 100% !important;
-
-    &:nth-child(2) {
-      max-width: 640px;
-    }
   }
 }
 
 .gallery-img {
+  box-shadow: 8px 8px 16px 0 rgba(91, 91, 91, 0.12);
+  border-radius: 24px;
+
   @include media(desktop) {
   }
 }

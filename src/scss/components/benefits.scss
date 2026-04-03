@@ -1,6 +1,4 @@
 .benefits-section {
-  background: #17283a;
-
   @include media(desktop) {
   }
 }
@@ -8,9 +6,9 @@
 .benefits-bg-wrapper {
   padding-top: 64px;
   padding-bottom: 64px;
-  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 375px;
 
   @include media(desktop) {
     padding-top: 104px;
@@ -28,42 +26,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 40px;
 
   @include media(desktop) {
     flex-direction: row;
+    justify-content: center;
+    gap: 64px;
   }
 }
 
 .benefits-text-wrapper {
+  max-width: max-content;
+
   @include media(desktop) {
-    width: 100%;
-    max-width: 640px;
+    max-width: 304px;
   }
 }
 
 .benefits-title {
-  text-align: left;
-  color: #fff;
+  margin-bottom: 24px;
 
   @include media(desktop) {
   }
 }
 
-.benefits-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+.benefits-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 1.4;
-  color: #fff;
+  color: #6a6a6a;
 
   @include media(desktop) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 .benefits-img {
   @include media(desktop) {
-    min-width: 640px;
+    min-width: 512px;
   }
 }

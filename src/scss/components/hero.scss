@@ -24,6 +24,7 @@
 
 .hero-container {
   @include media(desktop) {
+    padding: 0 144px;
   }
 }
 

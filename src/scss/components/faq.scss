@@ -1,4 +1,6 @@
 .faq-section {
+  background: #fff;
+
   @include media(desktop) {
   }
 }
@@ -29,6 +31,7 @@
 }
 
 .faq-title {
+  text-align: center;
   margin-bottom: 40px;
 
   @include media(desktop) {
@@ -46,10 +49,10 @@
 }
 
 .faq-list-item {
-  box-shadow: 8px 8px 16px 0 rgba(101, 87, 87, 0.12);
-  background: #f2e6ea;
-  border-radius: 16px;
-  padding: 20px 16px;
+  box-shadow: 8px 8px 16px 0 rgba(91, 91, 91, 0.12);
+  background: #fcf4e7;
+  border-radius: 12px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -74,12 +77,11 @@
 }
 
 .faq-btn-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: #2a2a2a;
+  line-height: 1.4;
+  color: #343434;
   text-align: left;
 
   @include media(desktop) {
@@ -91,8 +93,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 24px;
-  height: 24px;
+  min-width: 32px;
+  height: 32px;
   margin-left: auto;
   transition: transform 0.3s ease-in-out;
 
@@ -106,12 +108,12 @@
 }
 
 .faq-bottom-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: #555;
-  max-width: 287px;
+  line-height: 1.4;
+  color: #626262;
+  max-width: 263px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -119,7 +121,7 @@
 
   @include media(desktop) {
     font-size: 18px;
-    max-width: 584px;
+    max-width: 560px;
   }
 }
 
@@ -133,7 +135,7 @@
 }
 
 .faq-list-item.faq-open .faq-toggle-symbol {
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
 }
 
 .faq-list-item.faq-open {
